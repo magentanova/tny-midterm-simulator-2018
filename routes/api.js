@@ -49,8 +49,6 @@ router.get('/simulator/reset', (req, res, next) => {
 })
 
 router.get('/simulator/start', (req, res, next) => {
-
-    console.log('query ', req.query)
     simulator.start(req.query)
     res.json({
         message: 'simulation started',
